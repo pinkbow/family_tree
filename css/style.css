@@ -113,19 +113,45 @@ a {
 }
 
 .title {
-	padding-top: 470px;
-  margin-right: 1000px;
-  background-color: #26180C;
+	padding-top: 100px;
+  padding-bottom: 300px;
+  margin-right: 1400px;
+  background-color: #2D1608;
   text-align: center;
   font-size: 50px;
-  color: #E5D5C5;
+  color: #F0FAFB;
   opacity: 0.70;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
+.main-title {
+  padding-bottom: 50px;
+}
+
 .main-bar{
-	text-align: left;
+	text-align: right;
   font-size: 20px;
+  padding-right: 40px;
+  padding-bottom: 365px
+}
+
+.main-bar li {
+  padding-bottom: 10px;
+}
+
+.navigation-bar {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #2D1608;
+  text-align: center;
+  font-size: 25px;
+  color: #F0FAFB;
+  opacity: 0.70;
+  filter: alpha(opacity=90); /* For IE8 and earlier */ 
+}
+
+.navigation-bar a {
+  padding-left: 10px;
 }
 
 #quote {
@@ -137,16 +163,189 @@ a {
   padding-bottom: 20px;
 }
 
-.paragraph {}
+.message-paragraph {
+  background-color: #94827E;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 700px;
+  margin-left: 700px;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  border-radius: 25px;
+  opacity: 0.80;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.message-paragraph p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #1F0C06;
+  }
+
+.bold-message-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600px;
+  }
+
+.bold-message-title p {
+  padding-bottom: 10px;
+  }
+
+.message-paragraph .message_from_rameau_title {
+  font-size: 25px;
+  font-weight: 400px;
+  text-align: center;
+}
 
 #second {
   }
 
-  .title_4 {
+.title_4 {
   	font-size: 24px;
   	font-weight: 600;
   }
 
-  .message_from_rameau {
+.message_from_rameau {
+
+  }
+
+.contact {
+  margin-top: 50px;
+  margin-right: 700px;
+  margin-left: 700px; 
+  font-size: 30px;
+  font-weight: 600px;
+  background-color: #2D1608;
+  text-align: center;
+  color: #F0FAFB;
+  opacity: 0.70;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  }
+
+/* -------------------------------- 
+
+Form
+
+-------------------------------- */
+
+fieldset {
+  border: 0;
+  margin: 24px 0;
+}
+
+legend {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+form div {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+select,
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #2b3e51;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+legend {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 12px;
+  padding-left: 54px;
+  border: 1px solid #cfd9db;
+  background-color: #ffffff;
+  border-radius: .25em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2c97de;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+
+input[type="submit"] {
+  border: none;
+  background: #2c97de;
+  border-radius: .25em;
+  padding: 16px 50px;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #42a2e1;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  background: #2b3e51;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.9);
+}
+
+/* -------------------------------- 
+
+Custom icons
+
+-------------------------------- */
+
+.cd-form .user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+.company {
+  background: url("../img/cd-icon-company.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+.email {
+  background: url("../img/cd-icon-email.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+.message {
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: 100%;
+  }
+
+@media screen and (min-width: 1362px) {
 
   }
