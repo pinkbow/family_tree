@@ -104,9 +104,9 @@ img {
   height: auto;
 }
 
-a {
-	color: #D0FFFF;
-}
+
+
+
 
 .title h1 {
   font-size: 50px;
@@ -115,43 +115,74 @@ a {
 .title {
 	padding-top: 100px;
   padding-bottom: 300px;
-  margin-right: 1400px;
-  background-color: #2D1608;
+  margin-right: 1000px;
+  background-color: #BAC1D1;
   text-align: center;
   font-size: 50px;
-  color: #F0FAFB;
+  color: #2D1608;
   opacity: 0.70;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
-.main-title {
-  padding-bottom: 50px;
-}
+  .main-title {
+    padding-bottom: 50px;
+  }
 
-.main-bar{
-	text-align: right;
-  font-size: 20px;
-  padding-right: 40px;
-  padding-bottom: 365px
-}
+  .main-bar{
+  	text-align: right;
+    font-size: 20px;
+    padding-right: 40px;
+    padding-bottom: 300px
+  }
 
-.main-bar li {
-  padding-bottom: 10px;
-}
+  .solid-bar {
+    background-color: #D6FAFB;
+    padding-top: 50px;
+    padding-right: 700px;
+    padding-left: ;
+    padding-right: ;
+    padding-bottom: ;
+  }
+
+  .brown-bar {
+    background-color: #2D1608;
+    padding-top: 5px;
+    padding-right: 700px;
+    margin-bottom: 20px;
+    padding-left: ;
+    padding-right: ;
+    padding-bottom: ;
+  }
+
+  .main-bar li {
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+
+ .main-bar li a {
+    padding-bottom: 10px;
+    padding-right: 200px;
+    color: #CAD6D6;
+  }
 
 .navigation-bar {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
   background-color: #2D1608;
   text-align: center;
   font-size: 25px;
-  color: #F0FAFB;
+  color: #BDC6D7;
   opacity: 0.70;
   filter: alpha(opacity=90); /* For IE8 and earlier */ 
 }
 
 .navigation-bar a {
   padding-left: 10px;
+  color: #CBD8EB;
 }
 
 #quote {
@@ -164,27 +195,55 @@ a {
 }
 
 .message-paragraph {
-  background-color: #94827E;
+  background-color: #CBD8EB;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  margin-top: 50px;
-  margin-right: 700px;
-  margin-left: 700px;
+  margin-top: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
   font-size: 20px;
-  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 550px;
   text-align: left;
   border-radius: 25px;
   opacity: 0.80;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
-.message-paragraph p {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+.upsidedown-tree {
+   width: 300px;
+   height: 500px;
+   padding-left: 40px;
+   padding-top: 30px;
+   border-radius: 50px;
+   float: left;
+}
+
+.message-paragraph .message_from_rameau p {
+  padding-top: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.message-paragraph .message_from_rameau .intention {
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.message_from_rameau {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 400px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #BAC1D1;
+  border-radius: 25px;
   color: #1F0C06;
+  opacity: 0.80;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
   }
 
 .bold-message-title {
@@ -201,6 +260,7 @@ a {
   font-size: 25px;
   font-weight: 400px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 #second {
@@ -211,22 +271,229 @@ a {
   	font-weight: 600;
   }
 
-.message_from_rameau {
-
-  }
-
 .contact {
-  margin-top: 50px;
-  margin-right: 700px;
-  margin-left: 700px; 
+  margin-top: 200px;
+  margin-right: 300px;
+  margin-left: 300px; 
   font-size: 30px;
   font-weight: 600px;
   background-color: #2D1608;
   text-align: center;
   color: #F0FAFB;
+  border-radius: 25px;
   opacity: 0.70;
   filter: alpha(opacity=90); /* For IE8 and earlier */
   }
+
+.paragraph {
+  background-color: #CBD8EB;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 25px;
+  opacity: 0.80;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.paragraph .title_2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600px;
+  color: #1F0C06;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #D4CDCC;
+  border-radius: 15px;
+}
+
+.paragraph .bold-title {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.parent {
+  text-align: center;
+}
+
+  .paragraph .parent-section {
+    height: 100px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 500px;
+    display: inline-block;
+  }
+
+    .paragraph .parent-section p {
+      height: 100px;
+      width: 300px;
+      text-align: center;
+      margin-right: 400px;
+      font-size: 15px;
+    }
+
+    .paragraph .child1 {
+      height: 100px;
+      width: 100px;
+      margin-top: 50px;
+      margin-right: 50px;
+      font-size: 12px;
+      padding-right: 80px;
+      margin-left: 100px;
+      display: inline-block;
+    }
+
+    .paragraph .child2 {
+      height: 100px;
+      width: 100px;
+      margin-top: 50px;
+      padding-right: 80px;
+      margin-left: 100px;
+      display: inline-block;
+    }
+
+    .paragraph .child3 {
+      height: 100px;
+      width: 100px;
+      margin-top: 50px;
+      padding-right: 80px;
+      margin-left: 100px;
+      display: inline-block;
+    }
+
+    .paragraph .child4 {
+      height: 100px;
+      width: 100px;
+      margin-top: 50px;
+      padding-right: 80px;
+      margin-left: 100px;
+      display: inline-block;
+    }
+
+    .paragraph .child1 p {
+      height: 50px;
+      width: 250px;
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .paragraph .child2 p {
+      height: 50px;
+      width: 250px;
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .paragraph .child3 p {
+      height: 50px;
+      width: 250px;
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .paragraph .child4 p {
+      height: 50px;
+      width: 250px;
+      margin-top: 10px;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+
+.paragraph .grand_child1 {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+  padding-right: 15px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.paragraph .great_grand_child1 {
+  height: 25px;
+  width: 25px;
+  margin-top: 50px;
+  padding-right: 5px;
+  margin-left: 5px;
+  float: right;
+  display: inline-block;
+}
+
+.active-nav {
+  font-weight: bold;
+  background-color: gray;
+  border-radius: 50px;
+}
+
+#home-footer {
+  margin-top: .1px;
+  padding-top: 40px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 40px;
+  background-color: #94827E;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.tree-containter {
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  border-radius: 25px;
+  background-color: #CBD8EB;
+  
+}
+
+.tree-containter a {
+  border-radius: 10px;
+  }
+
+  .tree ul li a {
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .tree ul li a .parent {
+
+    }
+
+    a {
+      color: #D4CDCC;
+      background-color: #26180C;
+      }
+
+.footer {
+  margin-top: 300px;
+  padding-top: 30px;
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #94827E;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 /* -------------------------------- 
 
@@ -236,7 +503,7 @@ Form
 
 fieldset {
   border: 0;
-  margin: 24px 0;
+  margin: 14px 0;
 }
 
 legend {
@@ -279,7 +546,7 @@ textarea,
 select {
   padding: 12px;
   padding-left: 54px;
-  border: 1px solid #cfd9db;
+  border: 1px solid #cfd9db
   background-color: #ffffff;
   border-radius: .25em;
 }
@@ -343,9 +610,13 @@ Custom icons
 
 @media screen and (max-width: 960px) {
   .wrapper {
-    width: 100%;
+  
   }
 
-@media screen and (min-width: 1362px) {
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (min-width: 1400px) {
 
   }
