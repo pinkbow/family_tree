@@ -8,6 +8,12 @@
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
+ * {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
 article,
 aside,
 details,
@@ -104,10 +110,6 @@ img {
   height: auto;
 }
 
-
-
-
-
 .title h1 {
   font-size: 50px;
 }
@@ -125,14 +127,14 @@ img {
 }
 
   .main-title {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .main-bar{
   	text-align: right;
     font-size: 20px;
     padding-right: 40px;
-    padding-bottom: 300px
+    padding-bottom: 100px;
   }
 
   .solid-bar {
@@ -142,27 +144,33 @@ img {
     padding-left: ;
     padding-right: ;
     padding-bottom: ;
+    border-radius: 25px;
   }
 
   .brown-bar {
     background-color: #2D1608;
     padding-top: 5px;
-    padding-right: 700px;
-    margin-bottom: 20px;
+    margin-left: 25px;
+    padding-right: 650px;
+    margin-bottom: 70px;
     padding-left: ;
     padding-right: ;
-    padding-bottom: ;
+    border-radius: 25px;
   }
 
   .main-bar li {
     padding-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 24px;
   }
 
  .main-bar li a {
     padding-bottom: 10px;
-    padding-right: 200px;
     color: #CAD6D6;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
   }
 
 .navigation-bar {
@@ -223,11 +231,18 @@ img {
 .message-paragraph .message_from_rameau p {
   padding-top: 15px;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: #D4CDCC;
 }
 
 .message-paragraph .message_from_rameau .intention {
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
   font-size: 15px;
+  background-color: #BAC1D1;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .message_from_rameau {
@@ -239,7 +254,7 @@ img {
   margin-right: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #BAC1D1;
+  background-color: #D4CDCC;
   border-radius: 25px;
   color: #1F0C06;
   opacity: 0.80;
@@ -271,28 +286,16 @@ img {
   	font-weight: 600;
   }
 
-.contact {
-  margin-top: 200px;
-  margin-right: 300px;
-  margin-left: 300px; 
-  font-size: 30px;
-  font-weight: 600px;
-  background-color: #2D1608;
-  text-align: center;
-  color: #F0FAFB;
-  border-radius: 25px;
-  opacity: 0.70;
-  filter: alpha(opacity=90); /* For IE8 and earlier */
-  }
-
 .paragraph {
+  padding-top: 30px;
+  /*display: inline-block;
+*/  min-height: 800px;
+  width: 80%;
   background-color: #CBD8EB;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  margin-top: 150px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin: 150px auto 0;
   font-size: 20px;
   text-align: left;
   border-radius: 25px;
@@ -306,13 +309,16 @@ img {
   font-weight: 600px;
   color: #1F0C06;
   margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #D4CDCC;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .paragraph .bold-title {
+  padding-top: 30px;
   text-align: center;
   font-size: 25px;
   padding-bottom: 30px;
@@ -320,21 +326,29 @@ img {
 
 .parent {
   text-align: center;
+  margin: 20px auto;
+  width: 150px;
+  border-radius: 25px;
 }
 
-  .paragraph .parent-section {
-    height: 100px;
-    width: 150px;
-    margin-top: 10px;
-    margin-left: 500px;
-    display: inline-block;
-  }
+.parent:hover {
+  border: 10px solid #26180C ;
+  border-radius: 25px;
+}
+
+.parent-section {
+  width: 100%;
+}
+    .paragraph p {
+      text-align: center;
+      width: 150px;
+      margin: 0 auto;
+    }
 
     .paragraph .parent-section p {
       height: 100px;
       width: 300px;
       text-align: center;
-      margin-right: 400px;
       font-size: 15px;
     }
 
@@ -346,7 +360,9 @@ img {
       font-size: 12px;
       padding-right: 80px;
       margin-left: 100px;
+      text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child2 {
@@ -355,7 +371,9 @@ img {
       margin-top: 50px;
       padding-right: 80px;
       margin-left: 100px;
+      text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child3 {
@@ -364,7 +382,9 @@ img {
       margin-top: 50px;
       padding-right: 80px;
       margin-left: 100px;
+      text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child4 {
@@ -373,7 +393,9 @@ img {
       margin-top: 50px;
       padding-right: 80px;
       margin-left: 100px;
+      text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child1 p {
@@ -383,6 +405,7 @@ img {
       font-size: 20px;
       text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child2 p {
@@ -392,6 +415,7 @@ img {
       font-size: 20px;
       text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child3 p {
@@ -401,6 +425,7 @@ img {
       font-size: 20px;
       text-align: center;
       display: inline-block;
+      display: none;
     }
 
     .paragraph .child4 p {
@@ -410,6 +435,7 @@ img {
       font-size: 20px;
       text-align: center;
       display: inline-block;
+      display: none;
     }
 
 .paragraph .grand_child1 {
@@ -419,6 +445,7 @@ img {
   padding-right: 15px;
   margin-left: 15px;
   display: inline-block;
+  display: none;
 }
 
 .paragraph .great_grand_child1 {
@@ -429,6 +456,7 @@ img {
   margin-left: 5px;
   float: right;
   display: inline-block;
+  display: none;
 }
 
 .active-nav {
@@ -444,6 +472,7 @@ img {
   padding-right: 300px;
   padding-bottom: 40px;
   background-color: #94827E;
+  font-size: 14px;
   text-align: center;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
@@ -459,8 +488,51 @@ img {
   padding-bottom: 300px;
   border-radius: 25px;
   background-color: #CBD8EB;
-  
+  opacity: 0.80;
+  font-family: 'Josefin Sans', sans-serif;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
 }
+
+.tree-containter .child {
+  margin: 10px auto;
+  padding: .1px;
+  } 
+
+.tree-containter ul li .grand-child1 {
+  margin: 10px auto;
+  padding: .1px;
+  }
+
+.tree-containter ul li .grand-child2 {
+  margin: 10px auto;
+  padding: .1px;
+  }
+
+.tree-containter ul li .grand-child3 {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
+.tree-containter .grand-child4 {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
+.tree-containter .grand-child5 {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
+.tree-containter .grand-child6 {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
+.tree-containter .grand-child7 {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
 
 .tree-containter a {
   border-radius: 10px;
@@ -482,6 +554,12 @@ img {
       background-color: #26180C;
       }
 
+a.parents {
+  margin: 10px auto;
+  color: red;
+
+  }
+
 .footer {
   margin-top: 300px;
   padding-top: 30px;
@@ -501,12 +579,28 @@ Form
 
 -------------------------------- */
 
-fieldset {
+/*fieldset {
   border: 0;
   margin: 14px 0;
-}
+}*/
 
-legend {
+.contact {
+  padding-top: 50px;
+  margin-top: 200px;
+  margin-right: 300px;
+  margin-left: 300px; 
+  font-size: 30px;
+  font-weight: 600px;
+  background-color: #2D1608;
+  text-align: center;
+  color: #F0FAFB;
+  border-radius: 25px;
+  opacity: 0.70;
+  font-family: 'Josefin Sans', sans-serif;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  }
+
+/*legend {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
@@ -525,9 +619,9 @@ input,
 textarea,
 select,
 label {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
-  color: #2b3e51;
+  color: #D4CDCC;
 }
 
 input[type="text"],
@@ -537,7 +631,7 @@ select,
 legend {
   display: block;
   font-size: 1em;
-  width: 100%;
+  width: 75%;
 }
 
 input[type="text"],
@@ -545,8 +639,8 @@ input[type="email"],
 textarea,
 select {
   padding: 12px;
-  padding-left: 54px;
-  border: 1px solid #cfd9db
+  padding-left: 15px;
+  border: 1px solid #cfd9db;
   background-color: #ffffff;
   border-radius: .25em;
 }
@@ -567,17 +661,20 @@ textarea {
 
 input[type="submit"] {
   border: none;
-  background: #2c97de;
+  background: #6B86A4;
   border-radius: .25em;
-  padding: 16px 50px;
-  color: #ffffff;
+  padding: 16px 10px;
+  margin: 30px;
+  background-color: #CBD8EB;
+  color: #26180C;
   font-weight: bold;
   float: right;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background: #42a2e1;
+  background: #E5D5C5;
+  color: #484848;
 }
 
 input[type="submit"]:focus {
@@ -605,7 +702,7 @@ Custom icons
   background: url("../img/cd-icon-email.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
 }
 .message {
-  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;*/
 }
 
 @media screen and (max-width: 960px) {
